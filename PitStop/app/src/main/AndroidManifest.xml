@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginScreen"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +24,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RegistrationScreen"
+            android:label="PitStop">
+            <intent-filter>
+                <action android:name="Reg_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+        <!--<activity android:name=".RegistrationScreen" />-->
+        <!--<activity android:name=".MainActivity" />-->
+        <!--<activity android:name=".Profiles" />-->
     </application>
 
 </manifest>
