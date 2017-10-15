@@ -9,15 +9,13 @@
 
 
 
-    <ImageView
-        android:layout_width="500dp"
-        android:layout_height="210dp"
-        android:id="@+id/imageView2"
-        android:contentDescription="Main Reports"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="271dp"
+        android:background="@drawable/truck3"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="44dp"
-        tools:ignore="HardcodedText" />
+        android:layout_alignParentStart="true" />
 
     <info.hoang8f.widget.FButton
         android:text="Profile"
@@ -38,7 +36,7 @@
         android:width="100dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="12dp"
-        android:layout_below="@+id/imageView2"
+        android:layout_below="@+id/gifImageView"
         android:layout_alignParentStart="true"
         tools:ignore="HardcodedText" />
 
