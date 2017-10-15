@@ -157,6 +157,7 @@ public class RegistrationScreen extends AppCompatActivity {
                             databaseReference.child("Users").child(user.getUid()).child("password").setValue(passValue);
                             databaseReference.child("Users").child(user.getUid()).child("name").setValue(nameValue);
                             databaseReference.child("Users").child(user.getUid()).child("email").setValue(emailValue);
+                            databaseReference.child("Users").child(user.getUid()).child("phone").setValue("");
 
                             startActivity(new Intent(getApplicationContext(), TrackGridView.class));
 

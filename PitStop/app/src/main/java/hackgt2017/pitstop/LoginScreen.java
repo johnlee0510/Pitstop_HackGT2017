@@ -57,7 +57,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         if (firebaseAuth.getCurrentUser() != null) {
             //start activity
             finish();
-            startActivity(new Intent(getApplicationContext(), TrackGridView.class));
+            startActivity(new Intent(getApplicationContext(), UserMainActivity.class));
         }
 
         // UI ELEMENTS
