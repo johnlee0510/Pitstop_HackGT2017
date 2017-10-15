@@ -52,7 +52,7 @@ public class ImageAdapter extends BaseAdapter {
     private Integer[] mThumbIds = {
             R.drawable.candy, R.drawable.fries,
             R.drawable.coffe, R.drawable.icecream,
-            R.drawable.chicken, R.drawable.candy,
+            R.drawable.chicken, R.drawable.hotdog,
             R.drawable.cupcake, R.drawable.soda,
             R.drawable.pizza,
 

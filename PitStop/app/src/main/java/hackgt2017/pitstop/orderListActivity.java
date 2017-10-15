@@ -63,7 +63,6 @@ public class orderListActivity extends AppCompatActivity implements View.OnClick
 
         grid = (GridView) findViewById(R.id.OrderListView);
         //String[] ex = {"a", "b"};
-        arr.add("test");
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arr);
         grid.setAdapter(adapter);
 
@@ -73,7 +72,7 @@ public class orderListActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         // Perform action on click
         if(v == ReturnButton) {
-            startActivity(new Intent(getApplicationContext(), ArrivedActivity.class));
+            startActivity(new Intent(getApplicationContext(), UserMainActivity.class));
         }
     }
 }

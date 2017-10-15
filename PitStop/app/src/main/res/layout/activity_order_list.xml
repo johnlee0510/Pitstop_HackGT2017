@@ -6,7 +6,7 @@
     tools:context="hackgt2017.pitstop.orderListActivity">
 
     <info.hoang8f.widget.FButton
-        android:text="Ordergit"
+        android:text="BACK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ReturnButton"

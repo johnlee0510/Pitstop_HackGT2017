@@ -50,6 +50,18 @@ public class TrackGridView extends AppCompatActivity implements View.OnClickList
                     finish();
                     startActivity(new Intent(TrackGridView.this, Truck1Activity.class));
                 }
+                if (position == 1) {
+                    finish();
+                    startActivity(new Intent(TrackGridView.this, Truck2Activity.class));
+                }
+                if (position == 2) {
+                    finish();
+                    startActivity(new Intent(TrackGridView.this, Truck3Activity.class));
+                }
+                if (position == 3) {
+                    finish();
+                    startActivity(new Intent(TrackGridView.this, Truck4Activity.class));
+                }
             }
         });
 

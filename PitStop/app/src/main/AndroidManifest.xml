@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="hackgt2017.pitstop">
 
@@ -45,8 +45,10 @@
         <activity android:name=".UserMainActivity" />
         <!-- <activity android:name=".TrackGridView"/> -->
 
-        <activity android:name=".Truck1Activity"></activity>
+        <activity android:name=".Truck1Activity" />
+        <activity android:name=".Truck2Activity" />
+        <activity android:name=".Truck3Activity" />
+        <activity android:name=".Truck4Activity"></activity>
     </application>
 
 </manifest>
-

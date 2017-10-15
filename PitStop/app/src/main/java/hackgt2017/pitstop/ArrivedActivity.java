@@ -28,7 +28,7 @@ public class ArrivedActivity extends AppCompatActivity implements View.OnClickLi
 
         numOrdersView = (TextView) findViewById(R.id.NumberOrdersText);
         maxEdit = (EditText) findViewById(R.id.MaxEdit);
-        hereButton = (Button) findViewById(R.id.hereButton);
+        hereButton = (Button) findViewById(R.id.orderButton);
         signOutButton = (Button) findViewById(R.id.signOutButton);
 
         //

@@ -70,7 +70,7 @@ public class RegistrationScreen extends AppCompatActivity {
         if (firebaseAuth.getCurrentUser() != null) {
             //start activity
             finish();
-            startActivity(new Intent(getApplicationContext(), TrackGridView.class));
+            startActivity(new Intent(getApplicationContext(), LoginScreen.class));
         }
 
         // UI
