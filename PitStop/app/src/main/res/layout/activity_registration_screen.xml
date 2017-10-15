@@ -66,7 +66,7 @@
         android:layout_marginStart="18dp" />
 
     <TextView
-        android:id="@+id/Email"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -83,8 +83,8 @@
         android:ems="10"
         android:hint="hackGT@gmail.com"
         android:inputType="textPersonName"
-        android:layout_alignBaseline="@+id/Email"
-        android:layout_alignBottom="@+id/Email"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
         android:layout_toEndOf="@+id/Registration"
         android:layout_marginStart="18dp" />
 
