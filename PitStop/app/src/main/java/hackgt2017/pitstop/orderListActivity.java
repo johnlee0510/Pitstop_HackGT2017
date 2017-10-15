@@ -27,7 +27,7 @@ public class orderListActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         // Perform action on click
         if(v == ReturnButton) {
-            startActivity(new Intent(getApplicationContext(), UserMainActivity.class));
+            startActivity(new Intent(getApplicationContext(), ArrivedActivity.class));
         }
     }
 }

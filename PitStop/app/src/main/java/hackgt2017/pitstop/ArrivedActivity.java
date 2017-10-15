@@ -45,7 +45,7 @@ public class ArrivedActivity extends AppCompatActivity implements View.OnClickLi
         if (view == hereButton){
             // here button
             finish();
-            startActivity(new Intent(getApplicationContext(), UserMainActivity.class));
+            startActivity(new Intent(getApplicationContext(), OrderReceived.class));
         }
     }
 }

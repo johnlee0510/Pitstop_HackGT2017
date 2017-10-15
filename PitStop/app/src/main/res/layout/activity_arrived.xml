@@ -15,7 +15,7 @@
         android:id="@+id/trackStoreName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="trackStoreName"
+        android:text="Pizza Truck"
         android:textSize="20sp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="15dp"/>
@@ -63,14 +63,14 @@
         android:layout_alignStart="@+id/NumberOrdersNum" />
 
     <info.hoang8f.widget.FButton
-        android:text="I'm here!"
+        android:text="CONFIRM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hereButton"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
-        fbutton:buttonColor="#f26c4f"
-        fbutton:shadowColor="#bc2f34"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -86,8 +86,8 @@
         android:id="@+id/signOutButton"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"

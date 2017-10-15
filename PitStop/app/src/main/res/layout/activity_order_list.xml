@@ -6,14 +6,14 @@
     tools:context="hackgt2017.pitstop.orderListActivity">
 
     <info.hoang8f.widget.FButton
-        android:text="Return to Main"
+        android:text="Order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ReturnButton"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
