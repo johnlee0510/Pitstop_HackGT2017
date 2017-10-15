@@ -41,11 +41,7 @@
                     android:layout_height="wrap_content"
                     android:hint="username"
                     android:inputType="textEmailAddress"
-<<<<<<< HEAD
                     android:maxLines="1" />
-=======
-                    android:maxLines="1"/>
->>>>>>> 9685471e3e61d55b181b48ea9159a2e69b8ac755
 
             </android.support.design.widget.TextInputLayout>
 
@@ -62,11 +58,7 @@
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
-<<<<<<< HEAD
-                    android:maxLines="1" />
-=======
                     android:maxLines="1"/>
->>>>>>> 9685471e3e61d55b181b48ea9159a2e69b8ac755
 
             </android.support.design.widget.TextInputLayout>
 
