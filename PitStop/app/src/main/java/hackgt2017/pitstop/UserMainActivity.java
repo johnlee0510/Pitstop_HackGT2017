@@ -10,22 +10,45 @@ import android.widget.Button;
  * Created by AustinJ on 10/14/17.
  */
 
-public class UserMainActivity extends AppCompatActivity {
+public class UserMainActivity extends AppCompatActivity implements View.OnClickListener{
+    //UI elements
+    private Button cancelUserMain;
+    private Button profileButton;
+    private Button trackScheduleButton;
+    private Button checkOrderButton;
+//    private EditText maxEdit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_main);
-        //cancel button
-        Button cancelRegButton = (Button) findViewById(R.id.cancelUserMain);
-        cancelRegButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
 
-                Intent intent = new Intent(getApplicationContext(), LoginScreen.class);
-                startActivity(intent);
-                finish();
-                //setContentView(R.layout.activity_login);
-            }
-        });
+        cancelUserMain = (Button) findViewById(R.id.cancelUserMain);
+        profileButton = (Button) findViewById(R.id.profileButton);
+        trackScheduleButton = (Button) findViewById(R.id.trackScheduleButton);
+        checkOrderButton = (Button) findViewById(R.id.checkOrderButton);
+
+        //
+        cancelUserMain.setOnClickListener(this);
+        profileButton.setOnClickListener(this);
+        trackScheduleButton.setOnClickListener(this);
+        checkOrderButton.setOnClickListener(this);
     }
+    //cancel button
+    public void onClick(View v) {
+        // Perform action on click
+        if(v == cancelUserMain) {
+            startActivity(new Intent(getApplicationContext(), LoginScreen.class));
+        }
+        if(v == profileButton) {
+            startActivity(new Intent(getApplicationContext(), profileActivity.class));
+        }
+        if(v == trackScheduleButton) {
+            startActivity(new Intent(getApplicationContext(), TrackGridView.class));
+        }
+        if(v == checkOrderButton) {
+            startActivity(new Intent(getApplicationContext(), orderListActivity.class));
+        }
+    }
+
 }

@@ -9,23 +9,21 @@
 
 
 
-    <ImageView
-        android:layout_width="500dp"
-        android:layout_height="210dp"
-        android:id="@+id/imageView2"
-        android:contentDescription="Main Reports"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="271dp"
+        android:background="@drawable/truck3"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="44dp"
-        tools:ignore="HardcodedText" />
+        android:layout_alignParentStart="true" />
 
     <info.hoang8f.widget.FButton
         android:text="Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFF"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -38,14 +36,14 @@
         android:width="100dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="12dp"
-        android:layout_below="@+id/imageView2"
+        android:layout_below="@+id/gifImageView"
         android:layout_alignParentStart="true"
         tools:ignore="HardcodedText" />
 
     <info.hoang8f.widget.FButton
-        android:text="Check Track"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        android:text="Track Schedule"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -53,7 +51,7 @@
         android:layout_height="wrap_content"
         android:width="100dp"
         android:background="@drawable/button_shape"
-        android:id="@+id/checkTrackButton"
+        android:id="@+id/trackScheduleButton"
         android:fontFamily="sans-serif-light"
         android:minWidth="90dip"
         android:paddingLeft="2dp"
@@ -68,8 +66,8 @@
 
     <info.hoang8f.widget.FButton
         android:text="Logout"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -83,14 +81,14 @@
         android:paddingRight="2dp"
         android:minWidth="90dip"
         android:width="100dp"
-        android:layout_alignTop="@+id/listOrderReports"
-        android:layout_alignStart="@+id/profileButton"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_alignTop="@+id/checkOrderButton"
+        android:layout_alignStart="@+id/profileButton" />
 
     <info.hoang8f.widget.FButton
-        android:text="View Order"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        android:text="Check Order"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -98,15 +96,15 @@
         android:layout_height="wrap_content"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
-        android:id="@+id/listOrderReports"
+        android:id="@+id/checkOrderButton"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
         android:paddingTop="2dp"
         android:minWidth="90dip"
         android:width="100dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/checkTrackButton"
-        android:layout_alignStart="@+id/checkTrackButton"
+        android:layout_below="@+id/trackScheduleButton"
+        android:layout_alignStart="@+id/trackScheduleButton"
         tools:ignore="HardcodedText" />
 
 
