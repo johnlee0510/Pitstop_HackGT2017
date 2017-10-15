@@ -1,40 +1,77 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:srcCompat="@drawable/splash"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="67dp" />
 
     <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
-        android:layout_height="312dp"
-        android:background="@drawable/truck"
-        />
+    android:id="@+id/gifImageView"
+    android:layout_width="match_parent"
+    android:layout_height="271dp"
+    android:background="@drawable/truck"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <EditText
-            android:id="@+id/edit_message"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/edit_message" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sendMessage"
-            android:text="@string/button_send" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView1"
+    <info.hoang8f.widget.FButton
+        android:text="Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/result"
-        />
+        android:id="@+id/login"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-light"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        fbutton:cornerRadius="10dp"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/register"
+        android:layout_alignStart="@+id/register" />
 
-</LinearLayout>
+    <info.hoang8f.widget.FButton
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-light"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        fbutton:cornerRadius="10dp"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:text="PitStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FFF"
+        tools:ignore="HardcodedText"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/gifImageView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
