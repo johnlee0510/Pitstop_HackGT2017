@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,6 +25,16 @@ public class TrackGridView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_grid_view);
 
+        GridView gridview = (GridView) findViewById(R.id.gridview);
+        gridview.setAdapter(new ImageAdapter(this));
+
+        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View v,
+                                    int position, long id) {
+                Toast.makeText(TrackGridView.this, "" + position,
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
         //cancel button
         Button cancelRegButton = (Button) findViewById(R.id.cancelGridView);
         cancelRegButton.setOnClickListener(new View.OnClickListener() {
@@ -36,58 +47,6 @@ public class TrackGridView extends AppCompatActivity {
                 //setContentView(R.layout.activity_login);
             }
         });
-
-        // Get the widgets reference from XML layout
-        GridView gv = (GridView) findViewById(R.id.gridview);
-        final TextView tv = (TextView) findViewById(R.id.testShow);
-
-        String[] plants = new String[]{
-                "Striped alder",
-                "Amy root",
-                "Arizona sycamore",
-                "Green ash",
-                "Cherry birch",
-                "Gray birch",
-                "Mahogany birch",
-                "Spice birch",
-                "Yellow birch"
-        };
-
-        List<String> plantsList = new ArrayList<String>(Arrays.asList(plants));
-
-        /*
-            setAdapter (ListAdapter adapter)
-                Sets the data behind this GridView.
-
-                Parameters
-                adapter : the adapter providing the grid's data
-         */
-        // Data bind GridView with ArrayAdapter (String Array elements)
-        gv.setAdapter(new ArrayAdapter<String>(
-                this, android.R.layout.simple_list_item_1,plantsList));
-
-        /*
-            setOnItemClickListener (AdapterView.OnItemClickListener listener)
-                Register a callback to be invoked when an item
-                in this AdapterView has been clicked.
-
-                Parameters
-                listener : The callback that will be invoked.
-         */
-        // Set an item click listener for GridView widget
-        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Get the GridView selected/clicked item text
-                String selectedItem = parent.getItemAtPosition(position).toString();
-
-                // Display the selected/clicked item text and position on TextView
-                tv.setText("GridView item clicked : " +selectedItem
-                        + "\nAt index position : " + position);
-                Intent intent = new Intent();
-                intent.putExtra("selectedItem",selectedItem);
-                startActivity(new Intent(getApplicationContext(), ArrivedActivity.class));
-            }
-        });
     }
+
 }
