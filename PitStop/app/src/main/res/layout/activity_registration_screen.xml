@@ -10,8 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hackgt2017.pitstop.RegistrationScreen">
 
-
-
     <TextView
         android:text="Registration"
         android:layout_width="wrap_content"
