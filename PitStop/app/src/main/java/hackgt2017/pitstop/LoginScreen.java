@@ -35,13 +35,14 @@ public class LoginScreen extends AppCompatActivity  {
     private UserLoginTask mAuthTask = null;
 
     // UI references.
-    private AutoCompleteTextView mEmailView;
+    private AutoCompleteTextView musernameView;
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
     private String currentLoginAttempt;
     private int attempt = 0;
     private final String screen = "Login Screen";
+    private AutoCompleteTextView mEmailView;
 //    private GoogleApiClient mGoogleApiClient;
 
     @Override
@@ -50,11 +51,12 @@ public class LoginScreen extends AppCompatActivity  {
         setContentView(R.layout.activity_login_screen);
 //        startActivity(new Intent(LoginScreen.this, RegistrationScreen.class));
 
-
-        // get Instance  of Database Adapter
-
         // Set up the login form.
+
         mEmailView = (AutoCompleteTextView) findViewById(R.id.username);
+
+        musernameView = (AutoCompleteTextView) findViewById(R.id.username);
+
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -118,11 +120,11 @@ public class LoginScreen extends AppCompatActivity  {
         }
         DatabaseHandler db = new DatabaseHandler(v.getContext());
         // Reset errors.
-        mEmailView.setError(null);
+        musernameView.setError(null);
         mPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
-        String userId = mEmailView.getText().toString();
+        String userId = musernameView.getText().toString();
         String password = mPasswordView.getText().toString();
 
         boolean cancel = false;
@@ -144,14 +146,14 @@ public class LoginScreen extends AppCompatActivity  {
         }
 
         if (TextUtils.isEmpty(userId)) {
-            mEmailView.setError(getString(R.string.error_field_required));
+            musernameView.setError(getString(R.string.error_field_required));
 //            db.loginLogging(new LoggingSignin(userId, password, new Date(), false, attempt, false, getString(R.string.error_field_required)));
-            focusView = mEmailView;
+            focusView = musernameView;
             cancel = true;
         } else if (!isEmailValid(userId)) {
-            mEmailView.setError(getString(R.string.error_invalid_email));
+            musernameView.setError(getString(R.string.error_invalid_email));
 //            db.loginLogging(new LoggingSignin(userId, password, new Date(), false, attempt, false, getString(R.string.error_field_required)));
-            focusView = mEmailView;
+            focusView = musernameView;
             cancel = true;
         }
 

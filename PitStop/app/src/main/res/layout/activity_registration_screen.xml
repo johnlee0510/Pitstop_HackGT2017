@@ -10,8 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hackgt2017.pitstop.RegistrationScreen">
 
-
-
     <TextView
         android:text="Registration"
         android:layout_width="wrap_content"
@@ -67,7 +65,7 @@
         android:layout_toEndOf="@+id/Password" />
 
     <TextView
-        android:id="@+id/Email"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -84,9 +82,16 @@
         android:ems="10"
         android:hint="hackGT@gmail.com"
         android:inputType="textPersonName"
+<<<<<<< HEAD
         android:layout_alignBaseline="@+id/Email"
         android:layout_alignBottom="@+id/Email"
         android:layout_toEndOf="@+id/UserID" />
+=======
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_toEndOf="@+id/Registration"
+        android:layout_marginStart="18dp" />
+>>>>>>> 9685471e3e61d55b181b48ea9159a2e69b8ac755
 
     <TextView
         android:id="@+id/Password"
