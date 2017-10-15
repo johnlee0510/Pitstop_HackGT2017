@@ -1,5 +1,6 @@
 package hackgt2017.pitstop;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -29,15 +30,22 @@ public class ArrivedActivity extends AppCompatActivity implements View.OnClickLi
         maxEdit = (EditText) findViewById(R.id.MaxEdit);
         hereButton = (Button) findViewById(R.id.hereButton);
         signOutButton = (Button) findViewById(R.id.signOutButton);
-    }
 
+        //
+        hereButton.setOnClickListener(this);
+        signOutButton.setOnClickListener(this);
+    }
     @Override
     public void onClick(View view) {
-        if (view == hereButton) {
-            // ??? do something?
-        }
         if (view == signOutButton) {
             // sign out
+            finish();
+            startActivity(new Intent(getApplicationContext(), LoginScreen.class));
+        }
+        if (view == hereButton){
+            // here button
+            finish();
+            startActivity(new Intent(getApplicationContext(), UserMainActivity.class));
         }
     }
 }
