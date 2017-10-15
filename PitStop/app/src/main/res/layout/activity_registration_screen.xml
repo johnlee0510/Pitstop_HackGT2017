@@ -41,7 +41,7 @@
         android:layout_alignBaseline="@+id/name"
         android:layout_alignBottom="@+id/name"
         android:layout_toEndOf="@+id/Registration"
-        android:layout_marginStart="18dp" />
+        android:layout_alignStart="@+id/userIDInput" />
 
 
     <TextView
@@ -64,8 +64,7 @@
         android:inputType="textPersonName"
         android:layout_alignBaseline="@+id/UserID"
         android:layout_alignBottom="@+id/UserID"
-        android:layout_toEndOf="@+id/Registration"
-        android:layout_marginStart="18dp" />
+        android:layout_toEndOf="@+id/Password" />
 
     <TextView
         android:id="@+id/Email"
@@ -87,8 +86,7 @@
         android:inputType="textPersonName"
         android:layout_alignBaseline="@+id/Email"
         android:layout_alignBottom="@+id/Email"
-        android:layout_toEndOf="@+id/Registration"
-        android:layout_marginStart="18dp" />
+        android:layout_toEndOf="@+id/UserID" />
 
     <TextView
         android:id="@+id/Password"
@@ -109,25 +107,25 @@
         android:inputType="textPersonName"
         android:layout_alignBaseline="@+id/Password"
         android:layout_alignBottom="@+id/Password"
-        android:layout_toEndOf="@+id/Registration"
-        android:layout_marginStart="18dp" />
+        android:layout_toEndOf="@+id/Registration" />
 
     <info.hoang8f.widget.FButton
         android:text="Save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/save"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="43dp"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
-        android:layout_below="@+id/Password"
-        android:layout_alignStart="@+id/password"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/passwordInput"
+        android:layout_toStartOf="@+id/cancelProfile"
+        android:layout_marginEnd="14dp" />
 
     <info.hoang8f.widget.FButton
         android:text="Cancel"
@@ -136,15 +134,14 @@
         android:id="@+id/cancelProfile"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
-        android:layout_marginStart="20dp"
+        tools:ignore="HardcodedText"
         android:layout_alignBaseline="@+id/save"
         android:layout_alignBottom="@+id/save"
-        android:layout_toEndOf="@+id/save"
-        tools:ignore="HardcodedText" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
