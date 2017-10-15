@@ -63,10 +63,11 @@
         android:layout_alignStart="@+id/NumberOrdersNum" />
 
     <info.hoang8f.widget.FButton
+
         android:text="CONFIRM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hereButton"
+        android:id="@+id/orderButton"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
         fbutton:buttonColor="#42d284"
@@ -92,8 +93,8 @@
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
         tools:ignore="HardcodedText"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/hereButton" />
+        android:layout_alignStart="@+id/orderButton" />
 
 </RelativeLayout>

@@ -6,7 +6,7 @@
     tools:context="hackgt2017.pitstop.orderListActivity">
 
     <info.hoang8f.widget.FButton
-        android:text="Order"
+        android:text="Ordergit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ReturnButton"
@@ -17,13 +17,13 @@
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
-        android:layout_marginEnd="16dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         tools:ignore="HardcodedText"
-        android:layout_below="@+id/OrderListView"/>
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
     <GridView
         android:layout_width="match_parent"

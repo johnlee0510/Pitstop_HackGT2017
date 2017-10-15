@@ -1,42 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="hackgt2017.pitstop">
 
-<!-- To auto-complete the email text field in the login form with the user's emails -->
-<uses-permission android:name="android.permission.GET_ACCOUNTS" />
-<uses-permission android:name="android.permission.READ_PROFILE" />
-<uses-permission android:name="android.permission.READ_CONTACTS" />
-<uses-permission android:name="android.permission.INTERNET" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hackgt2017.pitstop">
 
-<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme"
-    android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-    <activity android:name=".MainActivity" android:label="@string/app_name">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationScreen"
+            android:label="PitStop">
+            <intent-filter>
+                <action android:name="Reg_ACTIVITY" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-    <activity android:name=".RegistrationScreen" android:label="PitStop">
-        <intent-filter>
-            <action android:name="Reg_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profileActivity" />
+        <activity android:name=".orderListActivity" />
+        <activity android:name=".OrderReceived" />
+        <!-- <activity android:name=".RegistrationScreen" /> -->
+        <activity android:name=".LoginScreen" />
+        <!-- <activity android:name=".Profiles" /> -->
+        <activity android:name=".ArrivedActivity" />
+        <activity android:name=".TrackGridView" />
+        <!-- <activity android:name=".RegistrationScreen" /> -->
+        <activity android:name=".UserMainActivity" />
+        <!-- <activity android:name=".TrackGridView"/> -->
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-    </activity>
+        <activity android:name=".Truck1Activity"></activity>
+    </application>
 
-    <activity android:name=".TrackGridView" />
-
-    <!-- <activity android:name=".RegistrationScreen" /> -->
-    <!-- <activity android:name=".MainActivity" /> -->
-    <!-- <activity android:name=".Profiles" /> -->
-    <activity android:name=".ArrivedActivity"></activity>
-    <activity android:name=".LoginScreen" />
-    <!--<activity android:name=".RegistrationScreen" />-->
-    <activity android:name=".UserMainActivity" />
-    <activity android:name=".OrderReceived" />
-    <!--<activity android:name=".TrackGridView"/>-->
-
-</application>
 </manifest>
+
