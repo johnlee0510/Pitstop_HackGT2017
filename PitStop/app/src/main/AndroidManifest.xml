@@ -39,7 +39,7 @@
         <activity android:name=".profileActivity" />
         <activity android:name=".orderListActivity" />
         <!-- <activity android:name=".RegistrationScreen" /> -->
-        <!-- <activity android:name=".MainActivity" /> -->
+        <activity android:name=".MainActivity" />
         <!-- <activity android:name=".Profiles" /> -->
         <activity android:name=".ArrivedActivity"></activity>
         <activity android:name=".TrackGridView"/>

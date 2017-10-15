@@ -18,7 +18,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 /**
@@ -66,11 +70,32 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         cancelButton.setOnClickListener(this);
     }
 
+    private void loginUser() {
+        String email = usernameView.getText().toString().trim();
+        String password = passwordView.getText().toString().trim();
+
+        //add validation later
+        firebaseAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()) {
+                            //end current activity
+                            finish();
+                            //start profile activity
+                            startActivity(new Intent(getApplicationContext(),
+                                    UserMainActivity.class));
+                        } else {
+                            Toast.makeText(LoginScreen.this, "Wrong user/password", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+    }
+
     @Override
     public void onClick(View view) {
         if (view == signInButton) {
-            finish();
-            startActivity(new Intent(this, TrackGridView.class));
+            loginUser();
         }
         if (view == cancelButton) {
             finish();
