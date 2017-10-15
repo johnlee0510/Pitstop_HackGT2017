@@ -24,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFF"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -44,8 +44,8 @@
 
     <info.hoang8f.widget.FButton
         android:text="Check Track"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -68,8 +68,8 @@
 
     <info.hoang8f.widget.FButton
         android:text="Logout"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"
@@ -89,8 +89,8 @@
 
     <info.hoang8f.widget.FButton
         android:text="View Order"
-        fbutton:buttonColor="#039BE5"
-        fbutton:shadowColor="#0277bd"
+        fbutton:buttonColor="#42d284"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         fbutton:cornerRadius="10dp"

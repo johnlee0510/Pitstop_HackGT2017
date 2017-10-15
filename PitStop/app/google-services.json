@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "191189796718",
+    "firebase_url": "https://pitstop-b06f1.firebaseio.com",
+    "project_id": "pitstop-b06f1",
+    "storage_bucket": "pitstop-b06f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191189796718:android:46db756eb5a97d2d",
+        "android_client_info": {
+          "package_name": "hackgt2017.pitstop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191189796718-p1askik264jk0ksqia00n2ov0ce7k0mj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hackgt2017.pitstop",
+            "certificate_hash": "72c13bc0b5f91ee0e695bfaefa0e8c8ffc7f23aa"
+          }
+        },
+        {
+          "client_id": "191189796718-t8f41sfbbgodtq69vgp3cj0trt4ur0f8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hackgt2017.pitstop",
+            "certificate_hash": "71c077d023e0461a0cb116709fa7cf52f629da77"
+          }
+        },
+        {
+          "client_id": "191189796718-6ib1uqcb1v0132b06ku1du90rslggvb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5j7dCAl-VvTCpMfIekAlqzERyD0v3o4k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191189796718-6ib1uqcb1v0132b06ku1du90rslggvb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
