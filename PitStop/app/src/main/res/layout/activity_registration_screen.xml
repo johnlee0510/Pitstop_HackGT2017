@@ -83,14 +83,11 @@
         android:hint="hackGT@gmail.com"
         android:inputType="textPersonName"
 
+
         android:layout_alignTop="@+id/email"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/name"
         android:layout_alignStart="@+id/userIDInput" />
-        android:layout_alignBaseline="@+id/email"
-        android:layout_alignBottom="@+id/email"
-        android:layout_toEndOf="@+id/Registration"
-        android:layout_marginStart="18dp" />
 
 
     <TextView
