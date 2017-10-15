@@ -3,13 +3,12 @@ package hackgt2017.pitstop;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Button;
-import android.widget.GridView;
-import android.widget.TextView;
-
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.GridView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -85,6 +84,9 @@ public class TrackGridView extends AppCompatActivity {
                 // Display the selected/clicked item text and position on TextView
                 tv.setText("GridView item clicked : " +selectedItem
                         + "\nAt index position : " + position);
+                Intent intent = new Intent();
+                intent.putExtra("selectedItem",selectedItem);
+                startActivity(new Intent(getApplicationContext(), ArrivedActivity.class));
             }
         });
     }

@@ -12,21 +12,32 @@
     tools:context="hackgt2017.pitstop.ArrivedActivity">
 
     <TextView
+        android:id="@+id/trackStoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="trackStoreName"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
         android:id="@+id/NumberOrdersText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of Orders"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="15dp"
         android:layout_alignBaseline="@+id/NumberOrdersNum"
-        android:layout_alignBottom="@+id/NumberOrdersNum" />
+        android:layout_alignBottom="@+id/NumberOrdersNum"
+        android:layout_below="@id/trackStoreName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:text="Number of Orders"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/NumberOrdersNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:text="(insert num)"
         android:textSize="18sp"
         android:layout_marginLeft="220dp" />
