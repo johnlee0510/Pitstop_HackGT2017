@@ -27,6 +27,8 @@ public class TrackGridView extends AppCompatActivity implements View.OnClickList
 
     private FirebaseAuth firebaseAuth;
 
+    private int pos = -1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,12 +44,15 @@ public class TrackGridView extends AppCompatActivity implements View.OnClickList
         gridview.setAdapter(new ImageAdapter(this));
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v,
-                                    int position, long id) {
-                Toast.makeText(TrackGridView.this, "" + position,
-                        Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                Toast.makeText(TrackGridView.this, "" + position, Toast.LENGTH_SHORT).show();
+                if (position == 0) {
+                    finish();
+                    startActivity(new Intent(TrackGridView.this, Truck1Activity.class));
+                }
             }
         });
+
         //cancel button
         cancelRegButton = (Button) findViewById(R.id.cancelGridView);
         cancelRegButton.setOnClickListener(this);
