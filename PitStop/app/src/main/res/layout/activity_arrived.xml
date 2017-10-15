@@ -63,10 +63,10 @@
         android:layout_alignStart="@+id/NumberOrdersNum" />
 
     <info.hoang8f.widget.FButton
-        android:text="I'm here!"
+        android:text="Order!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hereButton"
+        android:id="@+id/orderButton"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-light"
         fbutton:buttonColor="#f26c4f"

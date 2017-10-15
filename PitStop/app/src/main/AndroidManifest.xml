@@ -36,8 +36,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" />
-
+        <activity android:name=".profileActivity" />
+        <activity android:name=".orderListActivity" />
         <!-- <activity android:name=".RegistrationScreen" /> -->
         <!-- <activity android:name=".MainActivity" /> -->
         <!-- <activity android:name=".Profiles" /> -->
